@@ -1,0 +1,9 @@
+[package]
+name = "pqssi_plus"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+fips204 = "0.4.6"
+plonky2 = "1.1.0"
