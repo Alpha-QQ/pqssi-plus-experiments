@@ -7,8 +7,8 @@
      Alternative download: https://visualstudio.microsoft.com/visual-cpp-build-tools/
    - When the build tools are installed, continue in the rustup window with the default option.
 3. Close and reopen PowerShell, then check: `rustc --version` and `cargo --version`.
-4. Unzip `pqssi-plus-experiments.zip` to a short path, e.g. `C:\pqssi`, and open PowerShell there:
-   `cd C:\pqssi\pqssi-plus-experiments`
+4. Download the repository to a short path, e.g. `git clone https://github.com/Alpha-QQ/pqssi-plus-experiments C:\pqssi`
+   (or "Code" > "Download ZIP" and unpack it there), and open PowerShell in it: `cd C:\pqssi`
 5. `py -m pip install -r requirements.txt`
 6. Quick test: `py main.py smoke` (the first run downloads Plonky3 and compiles, about 10 minutes).
 7. Paper run: `py main.py`. Results: `results\pqssi_plus_results.json`.

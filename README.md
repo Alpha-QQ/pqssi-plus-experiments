@@ -14,8 +14,8 @@ Framework: Analysis and a Repair under Explicit Proof-System Assumptions*. All a
    Rust compiler can build it.
 
 ## Windows
-See `INSTALL-Windows.md` for step-by-step installation. Unzip to a short path such as `C:\pqssi`.
-Peak memory on Windows is the peak working set of the process. Use the "Balanced" power plan,
+See `INSTALL-Windows.md` for step-by-step installation. Clone or unpack the repository to a short path such as `C:\pqssi`.
+Peak memory on Windows is the peak working set of the process. Use the "Best performance" power mode,
 plug in a laptop, and close other programs while measuring.
 
 ## Run
@@ -24,7 +24,8 @@ python main.py smoke     # about a minute after the first build: checks that eve
 python main.py           # the paper's settings (several minutes after the build on a desktop; longer on slower machines)
 ```
 The first run also compiles both Rust programs (5-10 minutes). Everything goes to
-`results/pqssi_plus_results.json`. Settings are at the top of `main.py` (`PAPER` and `SMOKE`).
+`results/pqssi_plus_results.json`. `results/pqssi_plus_results-laptop-2026-11-12.json` is the
+result file of the run reported in the paper. Settings are at the top of `main.py` (`PAPER` and `SMOKE`).
 
 ## Measurement protocol
 - The issuer refuses attributes outside the schema ranges; the input-validation tests check this.
